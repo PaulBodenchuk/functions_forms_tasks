@@ -39,18 +39,18 @@
 <!-- Begin page content -->
 <div class="container">
     <div class="page-header">
-        <h1><a href="/functions_forms_tasks/11/11.php">To main</a></h1>
+        <h1><a href="/functions_forms_tasks/functions_forms_tasks/11/11.php">To main</a></h1>
     </div>
 
     <div>
 
         <form enctype="multipart/form-data" id="form" method="POST" action="11.php">
 
-            text to reverse<textarea form="form" rows="10" class="form-control" name="comment"></textarea>
+            <label for="textA1">text to reverse</label><textarea id="textA1" form="form" rows="10" class="form-control" name="comment"></textarea>
             <br>
 
             <?php
-            echo 'reverse text:<textarea form="form" rows="10" class="form-control" name="reverse">';
+            echo '<label for="reverse">reverse text:</label><textarea id="reverse" form="form" rows="10" class="form-control" name="reverse">';
             if (isset($_POST['submit']) and isset($_POST['comment'])){
                 echo upper_sentence($_POST['comment']);
             }

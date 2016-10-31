@@ -37,13 +37,13 @@
 <!-- Begin page content -->
 <div class="container">
     <div class="page-header">
-        <h1><a href="//functions_forms_tasks/1/1.php">Form</a></h1>
+        <h1><a href="//functions_forms_tasks/functions_forms_tasks/1/1.php">Form</a></h1>
     </div>
 
     <div>
         <form id="form" method="get">
-            TextArea1: <textarea form="form" rows="3" class="form-control" name="t_area1"></textarea>
-            TextArea2: <textarea form="form" rows="3" class="form-control" name="t_area2"></textarea>
+            <label for="textA1">TextArea1: </label><textarea id="textA1" form="form" rows="3" class="form-control" name="t_area1"></textarea>
+            <label for="textA2">TextArea2: </label><textarea form="form" id="textA2" rows="3" class="form-control" name="t_area2"></textarea>
 
             <input type="submit" value="Send">
 

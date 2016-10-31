@@ -37,13 +37,13 @@
 <!-- Begin page content -->
 <div class="container">
     <div class="page-header">
-        <h1><a href="/functions_forms_tasks/3/3.php">Form</a></h1>
+        <h1><a href="/functions_forms_tasks/functions_forms_tasks/3/3.php">Form</a></h1>
     </div>
 
     <div>
         <form id="form" method="get">
-            TextArea1: <textarea form="form" rows="10" class="form-control" name="t_area1"></textarea>
-            Max word size: <input type="text" class="form-control" value="3" name="count"/>
+            <label for="text1">TextArea1:</label><textarea  id="text1" form="form" rows="10" class="form-control" name="t_area1"></textarea>
+            <label for="number">Max word size:</label><input id="number" type="text" class="form-control" value="3" name="count"/>
             <input type="submit" value="Send">
 
             <pre>
@@ -51,7 +51,7 @@
                 if (isset($_GET["t_area1"]) and isset($_GET["count"])){
                     $text1 = $_GET["t_area1"];
                     $count = $_GET["count"];
-                    print_r(del_long_words($text1, $count));
+                    print_r(max_3_words($text1, $count));
                 }
                 ?>
             </pre>

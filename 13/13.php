@@ -39,21 +39,21 @@
 <!-- Begin page content -->
 <div class="container">
     <div class="page-header">
-        <h1><a href="/functions_forms_tasks/13/13.php">To main</a></h1>
+        <h1><a href="/functions_forms_tasks/functions_forms_tasks/13/13.php">To main</a></h1>
     </div>
 
     <div>
         <form enctype="multipart/form-data" id="form" method="POST" action="13.php">
 
-            text to calculate<textarea form="form" rows="5" class="form-control" name="comment"></textarea>
+            <label for="textA1">text to calculate:</label><textarea id="textA1" form="form" rows="5" class="form-control" name="comment"></textarea>
             <br>
-            Result:<textarea form="form" rows="5" class="form-control" name="reverse">;
+            <label for="result">Result:</label><textarea id="result" form="form" rows="5" class="form-control" name="reverse">
             <?php
                 if (isset($_POST['submit']) and isset($_POST['comment'])){
                     rsort_arr(get_number_of_words($_POST['comment']));
                 }
             ?>
-            </textarea>;
+            </textarea>
 
             <input type="submit" name="submit" value="Calculate">
         </form>

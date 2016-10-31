@@ -37,13 +37,13 @@
 <!-- Begin page content -->
 <div class="container">
     <div class="page-header">
-        <h1><a href="/functions_forms_tasks/5/5.php">Form</a></h1>
+        <h1><a href="/functions_forms_tasks/functions_forms_tasks/5/5.php">Form</a></h1>
     </div>
 
     <div>
         <form id="form" method="get" action="5.php">
-            Path: <input type="text" class="form-control" value="C:" name="path"/>
-            Path: <input type="text" class="form-control" value="pro" name="fileName"/>
+            <label for="path">Path: </label><input id="path" type="text" class="form-control" value="C:" name="path"/>
+            <label for="chars">Letters: </label><input type="text" id="chars" class="form-control" value="pro" name="fileName"/>
             <input type="submit" value="Show all files"><br>
 
             <?php

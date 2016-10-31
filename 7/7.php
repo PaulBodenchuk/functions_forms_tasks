@@ -39,7 +39,7 @@
 <!-- Begin page content -->
 <div class="container">
     <div class="page-header">
-        <h1><a href="/functions_forms_tasks/7/7.php">To main</a></h1>
+        <h1><a href="/functions_forms_tasks/functions_forms_tasks/7/7.php">To main</a></h1>
     </div>
 
     <div>

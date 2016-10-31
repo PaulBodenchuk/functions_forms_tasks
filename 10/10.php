@@ -39,7 +39,7 @@
 <!-- Begin page content -->
 <div class="container">
     <div class="page-header">
-        <h1><a href="/functions_forms_tasks/10/10.php">To main</a></h1>
+        <h1><a href="/functions_forms_tasks/functions_forms_tasks/10/10.php">To main</a></h1>
     </div>
 
     <div>
@@ -47,11 +47,11 @@
 
         <form enctype="multipart/form-data" id="form" method="POST" action="10.php">
 
-            text to reverse<textarea form="form" rows="3" class="form-control" name="comment"></textarea>
+            <label for="textA1">Text: </label><textarea id="textA1" form="form" rows="3" class="form-control" name="comment"></textarea>
             <br>
 
             <?php
-            echo 'reverse text:<textarea form="form" rows="3" class="form-control" name="reverse">';
+            echo '<label for="count">Count of unique words: </label><textarea id="count" form="form" rows="3" class="form-control" name="reverse">';
             if (isset($_POST['submit']) and isset($_POST['comment'])){
                 echo "В тексте ".get_unique_words($_POST['comment'])."уникальных слов(а)";
             }
